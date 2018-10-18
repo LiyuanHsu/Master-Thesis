@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+  <name>turtlebot_flatland</name>
+  <version>0.0.0</version>
+  <description>
+    Flatland port of the stdr version of turtlebot simulation. Convenient to test 2D-navigation related stuffs
+  </description>
+
+  <maintainer email="joseph@avidbots.com">Joseph Duchesne</maintainer>
+  <author email="mehdi.tlili@gmail.com">Joseph Duchesne</author>
+  <license>BSD</license>
+
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <run_depend>flatland_msgs</run_depend>
+  <run_depend>flatland_plugins</run_depend>
+  <run_depend>navigation</run_depend>
+  <run_depend>turtlebot_bringup</run_depend>
+  <run_depend>turtlebot_navigation</run_depend>
+  <run_depend>yocs_virtual_sensor</run_depend>
+  <run_depend>yocs_velocity_smoother</run_depend>
+</package>

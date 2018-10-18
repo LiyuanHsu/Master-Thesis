@@ -1,0 +1,38 @@
+# Turtlebot
+
+bodies:  # List of named bodies
+  - name: base
+    pose: [0, 0, 0] 
+    type: dynamic
+    color: [1, 1, 0, 1]
+    footprints:
+      - type: polygon
+        density: 1
+        points: [[0, 0.05], [1.2, 0.05], [1.2, -.05], [0, -.05]]
+        layers: ["2d", "3d"]
+  - name: detector_body
+    pose: [0, 0, 0]
+    type: static
+    color: [0.5, 0.5, 1.0, 0.3]
+    footprints:
+      - type: circle
+        radius: 2
+        center: [0.6, 0.0]
+        layers: ["robot"]
+        sensor: true
+        density: 1
+plugins:
+  - type: Tween
+    name: Tween0
+    body: base
+    delta: [-1, 0, 0.0]
+    duration: 1.0
+    mode: trigger
+    trigger_topic: "door_sensor"
+    easing: quadraticInOut
+  - type: BoolSensor
+    name: DoorSensor
+    topic: door_sensor  # The topic to publish one
+    update_rate: 10
+    body: detector_body
+    

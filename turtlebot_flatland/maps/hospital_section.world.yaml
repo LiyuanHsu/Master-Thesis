@@ -1,0 +1,16 @@
+properties: {} # For later use
+layers:  # Support for arbitrary number of layers
+  - name: "robot"  # So that sensors can trigger on just the robot
+  - name: "2d"  # layer 0 named "2d"
+    map: "map_current.yaml"  # leading / denotes absolute file path, otherwise relative
+    color: [0, 1, 0, 1]  # List of floats [r,g,b,a] to color debug boundary
+  - name: "3d"
+    map: "map_current.yaml"  # leading / denotes absolute file path, otherwise relative
+    color: [0, 1, 0, 0]  # List of floats [r,g,b,a] to color debug boundary
+#models:  
+#  - name: table0
+#    pose: [6,12,0]
+#    model: table.model.yaml
+#  - name: door0
+#    pose: [5.15, 10.0, 0]
+#    model: door.model.yaml
