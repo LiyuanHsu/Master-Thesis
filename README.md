@@ -3,7 +3,6 @@ Python and C++ code used in my Master Thesis.
 
 
 globalplan_record: Code for record the navigation actions from ros-navigation planner.
-
 flatland: ros depository for create 2D flatland navigation environment from https://github.com/avidbots/flatland
 
 turtlebot_flatland: ros depository for map and robot setup for 2D flatland navigation environment from https://github.com/avidbots/flatland
