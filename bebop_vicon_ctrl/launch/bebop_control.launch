@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<launch>
+
+  <arg name="bebop_ns" default="bebop"/> <!-- The namespace used by all the python scripts. Should match VICON obj name -->
+  <arg name="ip" default="192.168.103.1" />
+  <arg name="drone_type" default="bebop2" /> <!-- available drone types: bebop1, bebop2 -->
+  <arg name="config_file" default="$(find bebop_driver)/config/defaults.yaml" />
+  <arg name="camera_info_url" default="package://bebop_driver/data/$(arg drone_type)_camera_calib.yaml" />
+
+  <param name="bebop_ns" default="bebop" value="$(arg bebop_ns)" />
+
+  
+    <!-- The Bebop Controller -->
+    <node name="bebop_controller" pkg="bebop_vicon_control" type="bebop_controller.py" output="screen">
+      <param name="node_name" value="bebop_controller" />
+     </node>
+
+    <!-- An optional geofence capability -->
+    <!-- To run, add the correct coords to bebop_geofence and uncomment below -->
+    <!--
+    <node name="bebop_geofence" pkg="bebop_vicon_control" type="bebop_geofence.py" output="screen">
+      <param name="node_name" value="bebop_geofence" />
+    </node>
+    -->
+  
+    <!-- The Bebop driver node (from the official Bebop driver package) -->
+    <group ns="$(arg bebop_ns)">
+      <node pkg="bebop_driver" name="bebop_driver" type="bebop_driver_node" output="screen">
+          <param name="camera_info_url" value="$(arg camera_info_url)" />
+          <param name="bebop_ip" value="$(arg ip)" />
+          <!-- <param name="PilotingSettingsAbsolutControlOn" value="1" /> -->
+          <rosparam command="load" file="$(arg config_file)" />
+      </node>
+      <include file="$(find bebop_description)/launch/description.launch" />
+  </group>
+
+     <!-- The VICON bridge node -->
+     <!-- To connect to your own vicon system, be sure they are on the same network and 
+    add the correct IP Address and Port below to the data_stream_hostport parameter. 
+    I think the default VICON server port is 801.-->
+    <node pkg="vicon_bridge" type="vicon_bridge" name="vicon" output="screen">
+      <param name="stream_mode" value="ClientPull" type="str" />
+      <param name="datastream_hostport" value="192.168.10.1:801" type="str" />
+      <param name="tf_ref_frame_id" value="/world" type="str" />
+    </node>
+
+    <!-- Another node that handles autonomous landing functionality tracking relative positions between 
+    Bebop and another VICON object you want to land on. See the autonomous_landing.py for more details.-->
+    <!--<node pkg="bebop_vicon_control" type="autonomous_landing.py" name="autonomous_landing" output="screen">
+      <param name="node_name" value="autonomous_landing" />
+    </node>-->
+
+</launch>

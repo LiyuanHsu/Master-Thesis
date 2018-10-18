@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<launch>
+
+  <arg name="bebop_ns" default="bebop"/>
+
+  <!--<node name="update_goal_keyboard" pkg="bebop_vicon_control" type="update_goal_keyboard.py" output="screen">
+    <param name="node_name" value="update_goal_keyboard" />
+    </node> --> 
+
+  <node name="joy2control" pkg="xbox_joy" type="bebop_joy.py" output="screen">
+    <param name="node_name" value="update_goal_keyboard" />
+  </node> 
+
+  <node name="joy" pkg="joy" type="joy_node" output="screen">
+    <param name="node_name" value="joy" />
+  </node> 
+
+
+  <node name="controller" pkg="pid" type="controller" ns="$(arg bebop_ns)_x" output="screen">
+      <!-- <remap from="goal_x" to="setpoint" /> -->
+      <param name="node_name" value="pid_x" />
+      <param name="Kp" value="1.6" />
+      <param name="Ki" value="0.01" />
+      <param name="Kd" value="1.6" />
+      <param name="upper_limit" value="0.2" />
+      <param name="lower_limit" value="-0.2" />
+      <param name="windup_limit" value="10" />
+      <param name="max_loop_frequency" value="100.0" />
+      <param name="min_loop_frequency" value="100.0" />
+      <remap from="setpoint" to="/$(arg bebop_ns)/setpoint/x" />
+      <remap from="state" to="/$(arg bebop_ns)/state/x" />
+     </node>
+
+
+    <node name="controller" pkg="pid" type="controller" ns="$(arg bebop_ns)_y" output="screen">
+      <!-- <remap from="goal_x" to="setpoint" /> -->
+      <param name="node_name" value="pid_y" />
+      <param name="Kp" value="1.6" />
+      <param name="Ki" value="0.01" />
+      <param name="Kd" value="1.6" />
+      <!-- <param name="Kp" value=".3" />
+      <param name="Ki" value="0.04" />
+      <param name="Kd" value="0.5" /> -->
+      <param name="upper_limit" value="0.2" />
+      <param name="lower_limit" value="-0.2" />
+      <param name="windup_limit" value="10" />
+      <param name="max_loop_frequency" value="100.0" />
+      <param name="min_loop_frequency" value="100.0" />
+      <remap from="setpoint" to="/$(arg bebop_ns)/setpoint/y" />
+      <remap from="state" to="/$(arg bebop_ns)/state/y" />
+    </node>
+
+
+    <node name="controller" pkg="pid" type="controller" ns="$(arg bebop_ns)_z" output="screen">
+      <!-- <remap from="goal_x" to="setpoint" /> -->
+      <param name="node_name" value="pid_z" />
+      <param name="Kp" value="2.4" />
+      <param name="Ki" value="0.1" />
+      <param name="Kd" value="0.6" />
+      <param name="upper_limit" value="2" />
+      <param name="lower_limit" value="-2" />
+      <param name="windup_limit" value="5" />
+      <param name="max_loop_frequency" value="100.0" />
+      <param name="min_loop_frequency" value="100.0" />
+      <remap from="setpoint" to="/$(arg bebop_ns)/setpoint/z" />
+      <remap from="state" to="/$(arg bebop_ns)/state/z" />
+    </node>
+
+    <node name="controller" pkg="pid" type="controller" ns="$(arg bebop_ns)_yaw" output="screen">
+      <!-- <remap from="goal_x" to="setpoint" /> -->
+      <param name="node_name" value="pid_yaw" />
+      <param name="Kp" value="0.3" />
+      <param name="Ki" value="0.0" />
+      <param name="Kd" value="0.4" />
+      <param name="upper_limit" value="1" />
+      <param name="lower_limit" value="-1" />
+      <param name="windup_limit" value="1" />
+      <param name="max_loop_frequency" value="100.0" />
+      <param name="min_loop_frequency" value="100.0" />
+      <remap from="setpoint" to="/$(arg bebop_ns)/setpoint/yaw" />
+      <remap from="state" to="/$(arg bebop_ns)/state/yaw" />
+    </node>
+
+    <node name="bebop_api_server" pkg="bebop_vicon_control" type="bebop_api_server.py" output="screen">
+      <param name="node_name" value="bebop_api_server" />
+    </node>
+
+</launch>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package>
+  <name>bebop_vicon_control</name>
+  <version>0.7.0</version>
+  <description>Package combining vicon_bridge, bebop_autonomy, and pid to control the Parrot Bebop quadcopter using Vicon motion capture system.
+  The quadcopter is controlled through keyboard node or by calling service functions through API server.</description>
+
+  <maintainer email="12mdeyo@gmail.com">Matt Deyo</maintainer>
+
+  <license>BSD</license>
+
+  <!-- <url type="website">http://wiki.ros.org/teleop_twist_keyboard</url> -->
+
+  <author>Matt Deyo</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>message_generation</build_depend>
+  <run_depend>message_runtime</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>pid</run_depend>
+  <run_depend>bebop_driver</run_depend>
+
+</package>
