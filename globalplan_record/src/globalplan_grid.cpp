@@ -126,7 +126,7 @@ int path_to_action(float path_x_, float path_y_)
 	
 	// 8 actions
 	if(path_angle >= -22.5 && path_angle < 22.5)	action = 0; 
-	if(path_angle >= 22.5 && path_angle < 77.5)		action = 1;
+	if(path_angle >= 22.5 && path_angle < 77.5)	action = 1;
 	if(path_angle >= 77.5 && path_angle < 102.5)	action = 2;
 	if(path_angle >= 102.5 && path_angle < 157.5)	action = 3;
 	if(path_angle >= 157.5 || path_angle < -157.5)	action = 4;
