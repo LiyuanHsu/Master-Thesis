@@ -81,9 +81,9 @@ envs/curriculum/envs
 ### Environment generalization
 
 <p float="left">
-  <img src="/model_compare_office_2.png" width="200" />
-  <img src="/model_compare_street_2.png" width="200" /> 
-  <img src="/model_compare_forest_2.png" width="200" />
+  <img src="/model_compare_office_2.png" width="300" />
+  <img src="/model_compare_street_2.png" width="300" /> 
+  <img src="/model_compare_forest_2.png" width="300" />
 </p>
 
 ## Acknowledgments 
