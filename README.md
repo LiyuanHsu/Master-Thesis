@@ -21,9 +21,9 @@ There are two parts for this project
 
 
 ## Repositories
-* globalplan_record: Code for record the navigation actions from ros-navigation planner
+* [globalplan_record](globalplan_record): Code for record the navigation actions from ros-navigation planner
 * lidar: Connection and plotting LIDAR distance readings
-* envs: Environments for training reinforcement learning navigation model under [OpenAI/Gym](https://github.com/openai/gym)
+* [envs](envs): Environments for training reinforcement learning navigation model under [OpenAI/Gym](https://github.com/openai/gym)
 
 ## Map naming
 
