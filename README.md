@@ -31,7 +31,7 @@ There are two parts for this project
 
 ## Map naming
 
-### Map for turtleble_flatland
+### [Map for turtleble_flatland](turtlebot_flatland/maps)
 ```
 [turtlebot_flatland/maps](turtlebot_flatland/maps)
 ```
