@@ -33,6 +33,7 @@ We train the navigation model in follwoing two environments:
 * [globalplan_record](globalplan_record): Code for record the navigation actions from ros-navigation planner
 * [lidar](lidar): Connection and plotting LIDAR distance readings
 * [envs](envs): Environments for training reinforcement learning navigation model under [OpenAI/Gym](https://github.com/openai/gym)
+* [Grid_RL_cylinder4_rectangle1_wall1](Grid_RL_cylinder4_rectangle1_wall1): Train the 2D navigation model using reinforcemente learning algorithm under grid environment
 
 ## Map naming
 
