@@ -61,7 +61,7 @@ envs/curriculum/envs
 
 ## Result
 
-![](RL_forest_10.gif =100x100)
+![](RL_forest_10.gif | width=100)
 
 ## Acknowledgments
 
