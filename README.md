@@ -69,6 +69,9 @@ envs/curriculum/envs
 
 <img src="cylinder3_2_combine.gif" data-canonical-src="cylinder3_2_combine.gif" width="355" height="200" />
 
+<img src="cylinder3_combine.gif" data-canonical-src="cylinder3_combine.gif" width="355" height="200" />
+
+
 ### 2D navigation - simulation
 
 <img src="RL_forest_10.gif" data-canonical-src="RL_forest_10.gif" width="200" height="200" />
