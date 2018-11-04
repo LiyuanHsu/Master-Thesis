@@ -9,9 +9,9 @@ bebop_vicon_ctrl: ros setup for control bebop in vicon envionemnt from https://g
 lidar: connection and plotting LIDAR distance readings. <br />
 
 # Map naming
-Cyliner_map -> cylinder_map1.png
-Rectangle_map -> rectangle_map1.png
-Wall_map -> wall_map1.png
-Office_map -> complex_map3.png
-Street_map -> complex_map5_2.png
+Cyliner_map -> cylinder_map1.png <br />
+Rectangle_map -> rectangle_map1.png <br />
+Wall_map -> wall_map1.png <br />
+Office_map -> complex_map3.png <br />
+Street_map -> complex_map5_2.png <br />
 Forest_map -> complex_map6.png
