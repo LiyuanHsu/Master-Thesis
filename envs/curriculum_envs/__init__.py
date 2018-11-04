@@ -1,0 +1,32 @@
+
+from gym.envs.registration import register
+
+from gym.envs.curriculum_envs.cylinder_env import CylinderEnv
+from gym.envs.curriculum_envs.cylinder_multiple_obs_env import CylinderMultipleObstEnv
+from gym.envs.curriculum_envs.wall_env import WallEnv
+from gym.envs.curriculum_envs.cylinder_different_sizes import CylinderDiffSizesEnv
+from gym.envs.curriculum_envs.cylinder_different_sizes2 import CylinderDiffSizesEnv2
+from gym.envs.curriculum_envs.curriculum_env_diverse_obst import CurEnvDivObs
+from gym.envs.curriculum_envs.big_env_1 import BigEnv1
+from gym.envs.curriculum_envs.test_convergence import TestConvergenceEnv
+from gym.envs.curriculum_envs.planner_cylinder_map1 import PlannerCylinderMap1
+from gym.envs.curriculum_envs.planner_cylinder_map4 import PlannerCylinderMap4
+from gym.envs.curriculum_envs.planner_cylinder_map4_continuousLocation import PlannerCylinderMap4_continuousLocation
+from gym.envs.curriculum_envs.planner_cylinder_map4_range2 import PlannerCylinderMap4_range2
+from gym.envs.curriculum_envs.planner_cylinder_map4_openSpace import PlannerCylinderMap4_openSpace
+from gym.envs.curriculum_envs.planner_cylinder_map4_openSpace_penalize import PlannerCylinderMap4_openSpace_penalize
+from gym.envs.curriculum_envs.planner_rectangle_map1 import PlannerRectangleMap1
+from gym.envs.curriculum_envs.planner_wall_map1 import PlannerWallMap1
+from gym.envs.curriculum_envs.planner_cylinder4_rectangle1 import PlannerCylinder4Rectangle1
+from gym.envs.curriculum_envs.planner_cylinder4_wall1 import PlannerCylinder4Wall1
+from gym.envs.curriculum_envs.planner_rectangle1_wall1 import PlannerRectangle1Wall1
+from gym.envs.curriculum_envs.planner_cylinder4_rectangle1_wall1 import PlannerCylinder4Rectangle1Wall1
+
+from gym.envs.curriculum_envs.planner_rectangle_map2_observation4 import PlannerRectangleMap2Observation4
+from gym.envs.curriculum_envs.planner_complex_map1 import PlannerComplexMap1
+from gym.envs.curriculum_envs.planner_complex_map3 import PlannerComplexMap3
+from gym.envs.curriculum_envs.planner_complex_map3_continuous import PlannerComplexMap3_continuous
+from gym.envs.curriculum_envs.planner_complex_map4 import PlannerComplexMap4
+from gym.envs.curriculum_envs.planner_complex_map5 import PlannerComplexMap5
+from gym.envs.curriculum_envs.planner_complex_map6 import PlannerComplexMap6
+from gym.envs.curriculum_envs.planner_complex_map5_1 import PlannerComplexMap5_1
