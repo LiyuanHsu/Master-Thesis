@@ -33,7 +33,7 @@ There are two parts for this project
 
 ### [Map for turtleble_flatland](turtlebot_flatland/maps)
 ```
-[turtlebot_flatland/maps](turtlebot_flatland/maps)
+turtlebot_flatland/maps
 ```
 
 * Cyliner_map -> cylinder_map1.png 
@@ -43,7 +43,7 @@ There are two parts for this project
 * Street_map -> complex_map5_2.png 
 * Forest_map -> complex_map6.png
 
-### Map for OpenAI Gym
+### [Map for OpenAI Gym](envs/curriculum/envs)
 ```
 envs/curriculum/envs
 ```
