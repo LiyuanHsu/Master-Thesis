@@ -8,9 +8,14 @@ We propose two deep recurrent neural network architectures (reinforcement learni
 
 ## Getting Started
 
-There are two parts for this project
-* Training Reinforcement learning navigation model in OpenAI Gym environment 
-* Training Supervised learning navigation model by state-action pairs collecting from turtlebot_flatland environment
+There are three parts in this project:
+* 1D navigation 
+* 2D navigation
+* Environment generalization
+
+We train the navigation model in follwoing two environments:
+* Training Reinforcement learning navigation model (A3C_LSTM) in OpenAI Gym environment 
+* Training Supervised learning navigation model (SL_LSTM) by state-action pairs collecting from turtlebot_flatland environment
 
 ## Prerequisites
 
@@ -67,10 +72,7 @@ envs/curriculum/envs
 
 ### 1D navigation - real world
 
-<img src="cylinder3_2_combine.gif" data-canonical-src="cylinder3_2_combine.gif" width="355" height="200" />
-
 <img src="cylinder3_combine.gif" data-canonical-src="cylinder3_combine.gif" width="355" height="200" />
-
 
 ### 2D navigation - simulation
 
