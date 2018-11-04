@@ -63,7 +63,7 @@ envs/curriculum/envs
 
 ![](RL_forest_10.gif){:height="50%" width="50%"}
 
-<img src="https://camo.githubusercontent.com/..." data-canonical-src="RL_forest_10.gif" width="200" height="400" />
+<img src="RL_forest_10.gif" data-canonical-src="RL_forest_10.gif" width="200" height="400" />
 
 ## Acknowledgments
 
