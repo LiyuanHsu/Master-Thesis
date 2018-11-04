@@ -13,6 +13,7 @@ There are two parts for this project
 * [flatland](https://github.com/avidbots/flatland) - Ros depository for map and robot setup for 2D flatland navigation environment
 * [turtlebot_flatland](https://github.com/avidbots/turtlebot_flatland) - Turtlebot navigation demo under flatland
 * [OpenAI/Gym](https://github.com/openai/gym) - A toolkit for developing and comparing reinforcement learning algorithms
+* [sweep-ros](https://github.com/scanse/sweep-ros) - LIDAR sensor ROS driver
 
 ### Others
 
