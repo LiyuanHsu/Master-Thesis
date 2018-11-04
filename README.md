@@ -78,6 +78,10 @@ envs/curriculum/envs
 
 <img src="RL_forest_10.gif" data-canonical-src="RL_forest_10.gif" width="200" height="200" />
 
+### Environment generalization
+
+![](model_compare_office_2.png)
+
 ## Acknowledgments 
 
 * Stefan Stevsic, ETH Zürich
