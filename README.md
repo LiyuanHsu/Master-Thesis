@@ -2,11 +2,15 @@
 
 Transfer Learning for Mapless Quadrotor Navigation Using Recurrent Neural Network
 
+## Abstract
+
+We propose two deep recurrent neural network architectures (reinforcement learning and supervised learning) to solve quadrotor obstacle avoidance and navigation problems.  First, trainingthese neural networks only in simulation environment, they are able to directly transfer into realworld without any fine-tuning.  Both models achieve navigation tasks with success rate over 90%.  Second, we show the generalization ability of these models.  Training on few simple environments and transferring directly into unseen complex environments, both models perform navigation success rate up to 90%.
+
 ## Getting Started
 
 There are two parts for this project
-* Collecting the state-action pairs from a motion planner
 * Training Reinforcement learning navigation model in OpenAI Gym environment 
+* Training Supervised learning navigation model by state-action pairs collecting from turtlebot_flatland environment
 
 ## Prerequisites
 
@@ -29,7 +33,7 @@ There are two parts for this project
 
 ### Map for turtleble_flatland
 ```
-turtlebot_flatland/maps
+[turtlebot_flatland/maps](turtlebot_flatland/maps)
 ```
 
 * Cyliner_map -> cylinder_map1.png 
