@@ -38,7 +38,7 @@ We train the navigation model in follwoing two environments:
 
 ## Map naming
 
-### [Map for turtleble_flatland](turtlebot_flatland/maps)
+### [Map for turtleble_flatland (for supervised learning)](turtlebot_flatland/maps)
 ```
 turtlebot_flatland/maps
 ```
@@ -50,7 +50,7 @@ turtlebot_flatland/maps
 * Street_map -> complex_map5_2.png 
 * Forest_map -> complex_map6.png
 
-### [Map for OpenAI Gym](envs/curriculum/envs)
+### [Map for OpenAI Gym (for reinforcement learning)](envs/curriculum/envs)
 ```
 envs/curriculum/envs
 ```
