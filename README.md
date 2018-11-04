@@ -63,7 +63,7 @@ envs/curriculum/envs
 
 ### 1D navigation - simulation
 
-<img src="report_3cylinders.mp4" data-canonical-src="report_3cylinders.mp4" width="200" height="200" />
+<img src="report_3cylinders.gif" data-canonical-src="report_3cylinders.gif" width="200" height="200" />
 
 ### 1D navigation - real world
 
