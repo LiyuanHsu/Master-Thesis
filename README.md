@@ -32,16 +32,8 @@ There are two parts for this project
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
-
-```
-flkfjk
-```
-
+* [flatland](https://github.com/avidbots/flatland) - ros depository for map and robot setup for 2D flatland navigation environment
+* [turtlebot_flatland](https://github.com/avidbots/turtlebot_flatland) - turtlebot navigation demo under flatland
 
 ### Installing
 
