@@ -59,6 +59,10 @@ envs/curriculum/envs
 * Street_map -> planner_complex_map5_1.py
 * Forest_map -> planner_complex_map6.py
 
+## Result
+
+[](RL_forest_10.gif)
+
 ## Acknowledgments
 
 * Stefan Stevsic, ETH Zürich
