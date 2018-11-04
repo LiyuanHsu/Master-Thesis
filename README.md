@@ -17,9 +17,6 @@ There are two parts for this project
 * [bebop-autonomy](https://github.com/AutonomyLab/bebop_autonomy) - ROS driver for Parrot Bebop drone (quadrocopter)
 * [vicon_bridge](https://github.com/ethz-asl/vicon_bridge) - A driver providing data from VICON motion capture systems
 * [joystick_drivers](https://github.com/ros-drivers/joystick_drivers) - ROS joystick driver
-
-### Others
-
 * [bebop_vicon_ctrl](https://github.com/mdeyo/bebop_vicon_control) - Ros setup for control bebop in vicon envionemnt
 
 
