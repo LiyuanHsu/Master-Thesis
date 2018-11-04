@@ -61,9 +61,19 @@ envs/curriculum/envs
 
 ## Result
 
+### 1D navigation - simulation
+
+<img src="report_3cylinders.mp4" data-canonical-src="report_3cylinders.mp4" width="200" height="200" />
+
+### 1D navigation - real world
+
+<img src="cylinder3_2_combine.mp4" data-canonical-src="cylinder3_2_combine.mp4" width="200" height="200" />
+
+### 2D navigation - simulation
+
 <img src="RL_forest_10.gif" data-canonical-src="RL_forest_10.gif" width="200" height="200" />
 
-## Acknowledgments
+## Acknowledgments 
 
 * Stefan Stevsic, ETH Zürich
 * Prof. Dr. Otmar Hilliges, ETH Zürich
