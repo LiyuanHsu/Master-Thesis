@@ -126,7 +126,7 @@ int path_to_action(float path_x_, float path_y_)
 	
 	// 8 actions
 	if(path_angle >= -22.5 && path_angle < 22.5)	action = 0; 
-	if(path_angle >= 22.5 && path_angle < 77.5)		action = 1;
+	if(path_angle >= 22.5 && path_angle < 77.5)	action = 1;
 	if(path_angle >= 77.5 && path_angle < 102.5)	action = 2;
 	if(path_angle >= 102.5 && path_angle < 157.5)	action = 3;
 	if(path_angle >= 157.5 || path_angle < -157.5)	action = 4;
@@ -300,14 +300,14 @@ void request_start()
 	
 	
 
-	//do {
+
 	start_x = random_float(1, 8, 1000);
 	start_y = random_float(1, 8, 10000);
 
 	//Grid world
 	start_x = half_int(start_x);
 	start_y = half_int(start_y);
-	//} while ((start_x == 3 && start_y == 5) || (start_x == 5 && start_y == 3) || (start_x == 7 && start_y == 6));
+
 
 	//old_x = start_x;
 	//old_y = start_y;
@@ -316,22 +316,6 @@ void request_start()
 	spawn_model(start_x, start_y);
 	std::cout << "************************Jump to new start*******************" << '\n';
 
-	/**
-	req.pose.x = start_x;
-	req.pose.y = start_y;
-	req.pose.theta = 0.0; 
-	req.name = "bebop103";
-	
-	
-	bool success = client.call(req, resp);
-	if(success){
-		std::cout << "************************Jump to new start*******************" << '\n';
-	}else{ROS_ERROR_STREAM("Failed to move.");}
-	**/
-
-	//set_start = true;
-	//path_index = 1;
-	//clear_costmaps();	
 	ros::Duration(1).sleep();
 
 }
@@ -599,17 +583,6 @@ int main(int argc, char **argv)
 		
 	ros::init(argc, argv, "globalplan_record");
 	ros::NodeHandle n;
-	
-	/**
-	// csv data
-	file.open("laser_data2.csv", std::ios_base::app);
-	if(!file)
-	{
-		file.open("laser_data2.csv");
-		file.close();
-		file.open("laser_data2.csv", std::ios_base::app);
-	}
-	**/
 	
 	ros::Subscriber sub_path = n.subscribe("/move_base/NavfnROS/plan", 1, globalplan_record_cb);
 		
